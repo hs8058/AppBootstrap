@@ -1,0 +1,8 @@
+Flask
+requests
+flask-login
+flask-bootstrap
+boto3
+python-jose[cryptography]
+pynamodb
+python-dateutil

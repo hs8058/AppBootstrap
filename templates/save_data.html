@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Create an Offering</h2>
+<form action="{{ url_for('save_data') }}" method="POST">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" name="title" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control" name="description" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="publicationMoment">Publication Moment</label>
+        <input type="datetime-local" class="form-control" name="publicationMoment" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" class="form-control" name="price" step="0.01" required>
+    </div>
+    
+    <button type="submit" class="btn btn-primary mt-4">Save</button>
+</form>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+
+{% endblock %}

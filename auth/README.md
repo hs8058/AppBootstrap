@@ -1,0 +1,1 @@
+A serverless web app using AWS Cognito User Pools as an OIDC identity provider with basic CRUD operations on AWS DynamoDB, as a good starting bootstrap to build serverless web apps using Python and the AWS serverless stack.

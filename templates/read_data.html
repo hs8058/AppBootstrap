@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Offerings</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ServiceProviderID</th>
+            <th>Title</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.ServiceProviderID }}</td>
+            <td>{{ item.Title }}</td>
+            <td>{{ item.Description }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="{{ url_for('save_data') }}" class="btn btn-primary">Add New Entry</a>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Orders</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ServiceProviderID</th>
+            <th>BuyersName</th>
+            <th>BuyersEmailAddress</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.ServiceProviderID }}</td>
+            <td>{{ item.BuyersName }}</td>
+            <td>{{ item.BuyersEmailAddress }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+{% endblock %}
